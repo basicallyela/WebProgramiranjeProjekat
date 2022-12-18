@@ -1,0 +1,74 @@
+body {
+    background-color: #000000;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(197, 197, 197);
+}
+nav {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    margin: 0px;
+    background-color: #000;
+    display: block;
+}
+nav img{
+    margin: 0px 10px;
+    height: 50px;
+    width: auto;
+}
+nav button{
+    background-color: #000;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    float: right;
+    margin: 5px 10px 0px 10px;
+    height: 40px;
+    width: 200px;
+}
+nav button:hover{
+    cursor: pointer;
+    border-left: solid 2px rgb(205, 234, 252);
+    border-top: solid 2px rgb(205, 234, 252);
+}
+nav button:active{
+    border-left: none;
+    border-top: none;
+    border-right: solid 2px rgb(205, 234, 252);
+    border-bottom: solid 2px rgb(205, 234, 252);
+}
+main .fildset{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+main fieldset .button{
+    background-color: #000;
+    font-size: 15px;
+    color: rgb(197, 197, 197);
+    margin: 5px 10px;
+    height: 30px;
+    width: 85px;
+}
+main fieldset .button:hover{
+    cursor: pointer;
+    background-color: rgb(53, 53, 53);
+    border: solid 2px rgb(205, 234, 252);
+}
+main fieldset .button:active{
+    background-color: #000;
+    border: none;
+}
+
+footer{
+    margin-top: 30px;
+    margin: 0px;
+}
+footer a:hover{
+    color:rgb(205, 234, 252);
+}
+footer a{
+    margin: 5px;
+    color:rgb(197, 197, 197);
+}
