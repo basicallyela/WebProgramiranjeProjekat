@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+        <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <title>Kontaktirajte nas</title>
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+                <a href="#"><img src="https://www.dead.net/sites/g/files/g2000007851/files/body-images/daves-picks-header-580-new.gif" alt="header" width="40%"/></a>   
+                <a href="index.html"><button>NAZAD</button></a>
+                <a href="kontakt.html"><button>KONTAKT</button></a>
+                <a href="svirke.html"><button>SVIRKE</button></a>
+                <a href="onama.html"><button>O NAMA</button></a>
+            </nav>
+        </header>
+        
+        <main>
+        <section class="fildset">
+            <form>
+                <fieldset style="width: 50%;">
+                <br>
+                 <legend>Kontaktirajte nas:</legend>
+                 <label for="fname">Vaše ime/ime vaše kompanije:</label>
+                 <input type="text" id="fname" placeholder="Ime" required><br><br>
+                 <label for="lname">Vaše prezime:</label>
+                 <input type="text" id="lname" placeholder="Prezime" required><br><br>
+                 <label for="email">Vaš e-mail:</label>
+                 <input type="email" id="email" placeholder="e-mail"><br><br>
+                 <label for="pnumber">Vaš kontakt telefon:</label>
+                 <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Broj telefona" required><br><br>
+                 <label for="birthday">Vaš datum rođenja:</label>
+                 <input type="date" id="birthday"><br><br>
+                 <h4>Vaš spol:</h4>
+                 <input type="radio" id="musko" value="Musko">
+                 <label for="musko">Muško</label><br>
+                 <input type="radio" id="zensko" value="Zensko">
+                 <label for="zensko">Žensko</label><br>
+                 <input type="radio" id="ostalo" value="Ostalo">
+                 <label for="ostalo">Ostalo</label><br><br>
+                 <label for="opis">Opis događaja:</label><br><br>
+                 <textarea id="w3review" rows="10" cols="50"></textarea><br>
+                 <input type="submit" value="Pošalji" class="button" >
+                </fieldset>
+               </form>
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.instagram.com/gratefuldead/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/GratefulDead" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.youtube.com/c/gratefuldead/featured" target="_blank"><i class="bi bi-youtube"></i></a>
+        </footer>
+    </body>
+</html>

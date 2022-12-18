@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(43, 43, 43);
+    text-align: justify;
+    font-family: 'Gothic A1', sans-serif;
+    color:rgb(197, 197, 197);
+}
+nav {
+    margin: 0px;
+    background-color: #000;
+    display: block;
+}
+nav img{
+    margin: 0px 10px;
+    height: 50px;
+    width: auto;
+}
+nav button{
+    background-color: #000;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    float: right;
+    margin: 5px 10px 0px 10px;
+    height: 40px;
+    width: 200px;
+}
+nav button:hover{
+    cursor: pointer;
+    border-left: solid 2px rgb(205, 234, 252);
+    border-top: solid 2px rgb(205, 234, 252);
+}
+nav button:active{
+    border-left: none;
+    border-top: none;
+    border-right: solid 2px rgb(205, 234, 252);
+    border-bottom: solid 2px rgb(205, 234, 252);
+}
+
+main figure{
+    width: 92%;
+    padding: 5px;
+    background-color: #000;
+    color: rgb(197, 197, 197);
+    border: solid 1px rgb(197, 197, 197);
+}
+main h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    
+}
+main p{
+    margin: 0px 5px 5px 5px;
+    padding: 5px;
+}
+main .fildset{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+main fieldset .button{
+    background-color: #000;
+    font-size: 15px;
+    color: rgb(197, 197, 197);
+    margin: 5px 10px;
+    height: 30px;
+    width: 85px;
+}
+main fieldset .button:hover{
+    cursor: pointer;
+    background-color: rgb(53, 53, 53);
+    border: solid 2px rgb(205, 234, 252);
+}
+main fieldset .button:active{
+    background-color: #000;
+    border: none;
+}
+footer{
+    margin: 0px;
+}
+footer a:hover{
+    color:rgb(205, 234, 252);
+}
+footer a{
+    margin: 5px;
+    color:rgb(197, 197, 197);
+}
