@@ -1,100 +1,64 @@
 body {
-    background-image: url(gdbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     background-color: #000000;
     text-align: justify;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Merriweather', serif;
     color:rgb(197, 197, 197);
 }
-nav {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    margin: 0px;
-    background: transparent;
-    display: block;
-}
-nav img{
-    margin: 0px 10px;
-    height: 50px;
-    width: auto;
-}
-nav button{
-    background: transparent;
-    font-size: 20px;
-    color: rgb(197, 197, 197);
-    float: right;
-    margin: 5px 10px 0px 10px;
-    height: 40px;
-    width: 200px;
-    border: none;
-}
-nav button:hover{
-    cursor: pointer;
-    border-right: none;
-    border-bottom: none;
-    border-left: solid 2px rgb(205, 234, 252);
-    border-top: solid 2px rgb(205, 234, 252);
-}
-nav button:active{
-    border-left: none;
-    border-top: none;
-    border-right: solid 2px rgb(205, 234, 252);
-    border-bottom: solid 2px rgb(205, 234, 252);
-}
-
-.MainTitle{
+.BGPIC {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 1250px;
-    height: 340px;
-    color: rgb(197, 197, 197);
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    animation-name: opacity;
+    animation-duration: 1s;
+
 }
-
-
-main h1{
+.BGPIC h1{
     text-align: center;
-    font-size: 30px;
-    margin: 0px;
-    
+    position: absolute;
+    margin-top: 40vh;
+    font-size: 4em;
+    text-shadow: 5px 5px 5px #C94234;
+    color: rgba(133, 133, 133, 0.6);
+    transition: 0.3s;
+    font-weight: 900;
 }
-main p{
-    margin: 0px 5px 5px 5px;
-    padding: 5px;
-}
-
-.fter{
+.BGPIC img{
+    opacity: 0.8;
+    transition: 0.3s;
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    float: right;
-    margin: 0px;
+    justify-content: center;
+    width: 80vw;
+    height: 85vh;
+
 }
-.fter a:hover{
-    color:rgb(205, 234, 252);
-}
-.fter a{
-    font-size: 30px;
-    margin: 5px;
-    color:rgb(197, 197, 197);
+@keyframes opacity {
+    from {opacity: 0.5}
+    to{opacity: 1}
 }
 
-footer audio{
-    margin-top: 145px;
-    position:fixed;
-    width: 95vw;
+.BGPIC:hover h1{
+    cursor: pointer;
+    color: rgba(213, 213, 213, 0.8);
+}
+.BGPIC audio{
+    margin-top: 85vh;
+    position: absolute;
+    width: 50%;
 }
 audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel,
      audio::-webkit-media-controls-timeline-container {
-     background-color: #000;
+     background-color: #882d22;
      border: none;
      }
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display
 {
-    color: beige;
+    color: black;
 }
 
 audio::-webkit-media-controls-play-button{
@@ -114,3 +78,71 @@ audio::-webkit-media-controls-mute-button {
     background-color: rgba(255,255,255, 0.3);
     border-radius: 50%;
   }
+
+nav {
+    font-family: 'Merriweather', serif;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    margin: 0px;
+    background: black;
+    display: block;
+}
+nav img{
+    margin: 0px 10px;
+    height: 50px;
+    width: auto;
+}
+nav button{
+    font-family: 'Merriweather', serif;
+    background: black;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    float: right;
+    margin: 5px 10px 0px 10px;
+    height: 40px;
+    width: 200px;
+    border: none;
+}
+nav button:hover{
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    border-left: solid 2px #C94234;;
+    border-top: solid 2px #C94234;;
+}
+nav button:active{
+    border-left: none;
+    border-top: none;
+    border-right: solid 2px #C94234;;
+    border-bottom: solid 2px #C94234;;
+}
+
+
+main h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    
+}
+main p{
+    margin: 0px 5px 5px 5px;
+    padding: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vw;
+}
+footer a:hover{
+    color:#C94234;;
+}
+footer a{
+    font-size: 30px;
+    margin: 5px;
+    color:rgb(197, 197, 197);
+}
+
